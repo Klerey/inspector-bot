@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import os
-from keep_alive import keep_alive
 import random
 import youtube_dl
 import time
@@ -263,6 +262,4 @@ async def move(ctx, member: discord.Member, channel):
     await ctx.send(f"{ctx.message.author.mention}, you have successfully moved {member.mention} to {channel}")
 
 
-
-keep_alive()
-client.run(os.getenv('TOKEN'))
+client.run(TOKEN)
